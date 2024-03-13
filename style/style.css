@@ -8,6 +8,10 @@
     
 }
 
+select {
+  margin: 1rem;
+}
+
 
 /* Media query for mobile devices with a maximum width of 600px */
 @media only screen and (max-width: 600px) {
@@ -23,6 +27,7 @@
     align-items: center; 
     justify-content: center; 
   }
+
 
   h1 {
     color: rgb(255, 255, 255);
