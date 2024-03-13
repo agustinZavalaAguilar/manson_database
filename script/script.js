@@ -1,7 +1,7 @@
 
 
 
-let param = "select=*&where=region%20%3D%20%27Occitanie%27&limit=20";
+let param = "select=region%2C%20nombre_d_operations_actives%2C%20centroid&limit=20";
     
 
 
