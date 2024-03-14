@@ -2,7 +2,7 @@
 
 var map = L.map('map').setView([46.603354, 1.888334], 5.5); // Centered on France, zoom level 6
 
-console.log(map);
+//console.log(map);
 
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19,

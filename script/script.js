@@ -25,8 +25,10 @@ const trimmed_trimesters = raw_trimesters.map(dateString => dateString.substring
     
       trimmed_trimesters.forEach((option, index) => {
         const optionElement = document.createElement("option");
-        optionElement.value = index; // Set value as index
+        optionElement.value = option; // Set value as index
         optionElement.text = option; // Set text as option
+        //Add event listener to options
+      
         selectMenu.appendChild(optionElement);
     });
   }
@@ -36,6 +38,14 @@ const trimmed_trimesters = raw_trimesters.map(dateString => dateString.substring
 
         })
 
+
+  function getValue(){
+    console.log(document.getElementById("scroll_menu").value);
+    trimestre= document.getElementById("scroll_menu").value
+    let year = trimestre.substring(0,4);
+    let month = trimestre.substring(5,7);
+    console.log(year, month);
+  }      
 //region, nombre_d_operations_actives, trimestre, centroid
 
 
