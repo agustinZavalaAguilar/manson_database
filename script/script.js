@@ -45,8 +45,19 @@ const trimmed_trimesters = raw_trimesters.map(dateString => dateString.substring
     let year = trimestre.substring(0,4);
     let month = trimestre.substring(5,7);
     console.log(year, month);
+
+    fetch("https://data.enedis.fr/api/explore/v2.1/catalog/datasets/autoconsommation-collective-maille-region/records?select=nombre_d_operations_actives%2C%20centroid&limit=20&refine=trimestre%3A%22"+year+"%2F"+month+"%22")
+
+    .then(response => {return response.json()})
+    .then((data)=>{
+        console.log(data);
+    });
+
+
   }      
 //region, nombre_d_operations_actives, trimestre, centroid
+
+
 
 
  
