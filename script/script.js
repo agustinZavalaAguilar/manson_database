@@ -9,7 +9,7 @@ fetch('https://data.enedis.fr/api/explore/v2.1/catalog/datasets/autoconsommation
 
   .then(response => {return response.json()})
   .then((data)=>{
-      console.log(data.results[0].trimestre);
+      //console.log(data.results[0].trimestre);
 //Extract an array from the response dataset      
         for (var i=0; i<data.results.length; i++){
         raw_trimesters.push(data.results[i].trimestre);
