@@ -25,6 +25,8 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 var marker1 = L.marker([46.933386, 2.438965]).addTo(map);
 let marker2 = L.marker([43.702430642, 2.144000638]).addTo(map);
 
+
+
 //add a circle
 // var circle = L.circle([46.933386, 2.438965], {
 //     color: 'red',
@@ -44,6 +46,7 @@ let marker2 = L.marker([43.702430642, 2.144000638]).addTo(map);
 // add popups
 marker1.bindPopup("<b>Hello master!</b>").openPopup();
 marker2.bindPopup("<b>My master is sexy!</b>").openPopup();
+
 //circle.bindPopup("I am a circle.");
 //polygon.bindPopup("I am a polygon.");
 
@@ -54,11 +57,11 @@ marker2.bindPopup("<b>My master is sexy!</b>").openPopup();
 //     .openOn(map);
 
 // events 
-function onMapClick(e) {
-    alert("You clicked the map at " + e.latlng);
-}
+// function onMapClick(e) {
+//     alert("You clicked the map at " + e.latlng);
+// }
     
-map.on('click', onMapClick);
+// map.on('click', onMapClick);
 
 
 //
